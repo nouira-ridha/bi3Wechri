@@ -13,7 +13,7 @@
         <img src="assets/img/car1.jpg" alt="Audi" width="1550" height="690">
         <div class="carousel-caption">
             <h3>Audi</h3>
-            <p>On Fire!</p>
+            <p>On Fire!!</p>
           </div>
       </div>
       <div class="carousel-item">
@@ -39,5 +39,76 @@
     <a class="carousel-control-next" href="#demo" data-slide="next">
       <span class="carousel-control-next-icon"></span>
     </a>
-  
+    </div>
+    <br>
+    <br>
+
+
+  <div class="container-fluid">
+    <div class="row row-cols-3">
+      
+      <div class="col">
+        <div class="chart-wrapper ">
+          <div style="display: block">
+          <canvas baseChart 
+          [data]="pieChartData" 
+          [labels]="pieChartLabels" 
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [legend]="pieChartLegend"
+          [colors]="color1">
+          </canvas>
+        </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="chart-wrapper">
+          <canvas baseChart 
+          [data]="doughnutChartData"
+          [labels]="doughnutChartLabels"
+          [chartType]="doughnutChartType"
+          [colors]="color2">
+          </canvas>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="chart-wrapper">
+          <canvas baseChart
+          [datasets]="radarChartData"
+          [options]="radarChartOptions"
+          [labels]="radarChartLabels"
+          [chartType]="radarChartType"
+          [colors]="color3">
+          </canvas>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row row-cols-1">
+      <div class="col">
+        <div class="chart-wrapper">
+          <canvas baseChart 
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"
+          [colors]="color4">
+          </canvas>
+        </div>
+
+      </div>
+    </div>
+
   </div>
+  
+
+  <!--https://www.remotestack.io/chart-js-in-angular-with-ng2-charts-examples/-->
