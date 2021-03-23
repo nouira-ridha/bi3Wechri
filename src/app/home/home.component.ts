@@ -84,7 +84,7 @@ export class HomeComponent implements OnInit {
   barChartLegend = true;
   barChartPlugins = [];
   barChartData: ChartDataSets[] = [
-    { data: [45, 37, 60, 70, 46, 33], label: 'Best Fruits'  }
+    { data: [45, 37, 60, 70, 46, 33], label: 'Best Fruits'}
   ];
   color4: Color[] = [
     {
