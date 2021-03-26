@@ -212,14 +212,15 @@ p {
   height: 20px
 }
 
-.progress-bar {
-  background-color: #673AB7
-}
-
 .fit-image {
   width: 100%;
   object-fit: cover
 }
+
+.progress-bar {
+  background-color: #673AB7
+}
+
 
 
 
